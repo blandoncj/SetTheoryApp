@@ -1,49 +1,48 @@
 # 📐 Set Theory App
 
+[🇪🇸Version en español](README.es.md)
+
 ![Frontend](https://img.shields.io/badge/frontend-React-blue)
 ![Backend](https://img.shields.io/badge/backend-FastAPI-yellow)
 
-**Set Theory App** es una aplicación web interactiva que permite a los usuarios
-**crear, visualizar y operar conjuntos matemáticos**. Ideal para estudiantes, docentes
-o entusiastas de la teoría de conjuntos, esta app brinda una interfaz intuitiva
-para explorar operaciones como unión, intersección, diferencia y más.
+**Set Theory App** is an interactive web application that allows users to **create, visualize, and perform operations on mathematical sets**. Ideal for students, educators, or enthusiasts of set theory, this app offers an intuitive interface to explore operations such as union, intersection, difference, and more.
 
 ---
 
-![Vista previa de la app](./assets/screenshots/preview.png)
+![App preview](./assets/screenshots/preview.png)
 
 ---
 
-## 📚 Tabla de contenido
+## 📚 Table of contents
 
-- [¿Qué hace esta app?](#-qué-hace-esta-app)
-- [Tecnologías utilizadas](#-tecnologías-utilizadas)
-- [¿Cómo ejecutar el proyecto?](#-cómo-ejecutar-el-proyecto)
-- [¿Cómo contribuir?](#-cómo-contribuir)
-- [Contáctame](#-contáctame)
-
----
-
-## 🧠 ¿Qué hace esta app?
-
-Con **Set Theory App**, puedes:
-
-- ✏️ Ingresar conjuntos personalizados (por ejemplo: A = {1, 2, 3}, B = {2, 3, 4})
-- ⚙️ Realizar operaciones entre conjuntos:
-  - Unión (A ∪ B)
-  - Intersección (A ∩ B)
-  - Diferencia (A - B)
-  - Diferencia Simétrica (A Δ B)
-  - Complemento (¬A)
-  - Cartesiano (A × B)
-  - Potencia (P(A))
-- 👁️ Visualizar los resultados de manera clara y ordenada.
+- [What does this app do?](#-what-does-this-app-do)
+- [Technologies used](#-technologies-used)
+- [How to run the project](#-how-to-run-the-project)
+- [How to contribute](#-how-to-contribute)
+- [Contact me](#-contact-me)
 
 ---
 
-## 🧱 Tecnologías utilizadas
+## 🧠 What does this app do?
 
-### 🖥️Frontend
+With **Set Theory App**, you can:
+
+- ✏️ Input custom sets (e.g.: A = {1, 2, 3}, B = {2, 3, 4})
+- ⚙️ Perform operations between sets:
+  - Union (A ∪ B)
+  - Intersection (A ∩ B)
+  - Difference (A - B)
+  - Symmetric Difference (A Δ B)
+  - Complement (¬A)
+  - Cartesian Product (A × B)
+  - Power Set (P(A))
+- 👁️ View results clearly and neatly
+
+---
+
+## 🧱 Technologies used
+
+### 🖥️ Frontend
 
 - [React](https://reactjs.org/)
 - [Vite](https://vitejs.dev/)
@@ -58,30 +57,30 @@ Con **Set Theory App**, puedes:
 
 ---
 
-## 🚀 ¿Cómo ejecutar el proyecto?
+## 🚀 How to run the project
 
-### 🧩 Requisitos
+### 🧩 Requirements
 
-- Node.js (v18 o superior)
-- Python (v3.8 o superior)
-- pip (v20 o superior)
-- npm/yarn (según preferencia)
+- Node.js (v18 or higher)
+- Python (v3.8 or higher)
+- pip (v20 or higher)
+- npm/yarn (your choice)
 
-### 1. Clonar el repositorio
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/blandoncj/SetTheoryApp.git
 cd SetTheoryApp
 ```
 
-### 2. Instalar dependencias
+### 2. Install dependencies
 
 🔹Frontend
 
 ```bash
 cd frontend
-npm install # o yarn install
-npm run dev # o yarn dev
+npm install # or yarn install
+npm run dev # or yarn dev
 ```
 
 🔹 Backend
@@ -89,36 +88,33 @@ npm run dev # o yarn dev
 ```bash
 cd backend
 python -m venv env
-source venv/bin/activate # En Windows: venv\Scripts\activate
+source venv/bin/activate # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 python main.py
 ```
 
-### 3. Acceder a la aplicación
+### 3. Open the app
 
-Una vez que ambos servidores estén en funcionamiento, abre tu
-navegador y dirígete a:
+Once both servers are running, open your browser and go to:
 
 - <http://localhost:5173> (Frontend)
 - <http://localhost:8000> (Backend)
 
 ---
 
-## 🤝 ¿Cómo contribuir?
+## 🤝 How to contribute
 
-Me encantaría recibir tus contribuciones para mejorar esta app! Sigue estos
-pasos para contribuir:
+Contributions are welcome! Just follow these steps:
 
-1. Haz un fork del repositorio.
-2. Crea una rama para tu feature (`git checkout -b feature/nueva-feature`)
-o fix (`git checkout -b fix/nueva-fix`).
-3. Realiza tus cambios y haz commit (`git commit -m 'Agregada nueva feature'`).
-4. Sube tus cambios a tu fork (`git push origin feature/nueva-feature`).
-5. Abre un Pull Request en el repositorio original.
+1. Fork the repository.
+2. Create a branch (git checkout -b feature/your-feature or fix/your-fix).
+3. Make your changes and commit (git commit -m 'Added new feature').
+4. Push to your fork (git push origin feature/your-feature).
+5. Open a Pull Request.
 
-## 💬 Contáctame
+## 💬 Contact me
 
-Si tienes preguntas, sugerencias o simplemente quieres charlar sobre teoría de conjuntos,
+If you have questions, suggestions, or want to talk about set theory:
 
 - Email: <jacoboblandon94@gmail.com>
 - GitHub: [blandoncj](https://githbu.com/blandoncj)
