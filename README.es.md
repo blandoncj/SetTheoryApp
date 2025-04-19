@@ -1,8 +1,9 @@
 # 📐 Set Theory App
 
-[🇬🇧English version](README.md)
 ![Frontend](https://img.shields.io/badge/frontend-React-blue)
 ![Backend](https://img.shields.io/badge/backend-FastAPI-yellow)
+
+[🇬🇧 English version](README.md)
 
 **Set Theory App** es una aplicación web interactiva que permite a los usuarios
 **crear, visualizar y operar conjuntos matemáticos**. Ideal para estudiantes, docentes
