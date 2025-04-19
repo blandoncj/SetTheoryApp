@@ -5,7 +5,7 @@ interface Props {
 
 export const SubmitButton = ({ className, text }: Props) => {
   const baseClasses =
-    "px-4 py-2 bg-cyan-500 text-white rounded-lg hover:bg-cyan-400 cursor-pointer transition duration-200 ease-in-out";
+    "px-4 py-2 bg-cyan-500 text-white text-lg font-semibold rounded-lg hover:bg-cyan-400 cursor-pointer transition duration-200 ease-in-out";
 
   return (
     <button
