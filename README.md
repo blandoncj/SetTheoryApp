@@ -1,9 +1,9 @@
 # 📐 Set Theory App
 
-[🇪🇸Version en español](README.es.md)
-
 ![Frontend](https://img.shields.io/badge/frontend-React-blue)
 ![Backend](https://img.shields.io/badge/backend-FastAPI-yellow)
+
+[🇪🇸 Version en español](README.es.md)
 
 **Set Theory App** is an interactive web application that allows users to **create, visualize, and perform operations on mathematical sets**. Ideal for students, educators, or enthusiasts of set theory, this app offers an intuitive interface to explore operations such as union, intersection, difference, and more.
 
