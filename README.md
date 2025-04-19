@@ -1,6 +1,6 @@
 # 📐 Set Theory App
 
-[🇪Version en español](README.es.md)
+[🇪🇸Version en español](README.es.md)
 
 ![Frontend](https://img.shields.io/badge/frontend-React-blue)
 ![Backend](https://img.shields.io/badge/backend-FastAPI-yellow)
