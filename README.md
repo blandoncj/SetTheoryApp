@@ -1,9 +1,26 @@
 # 📐 Set Theory App
 
+![Frontend](https://img.shields.io/badge/frontend-React-blue)
+![Backend](https://img.shields.io/badge/backend-FastAPI-yellow)
+
 **Set Theory App** es una aplicación web interactiva que permite a los usuarios
 **crear, visualizar y operar conjuntos matemáticos**. Ideal para estudiantes, docentes
 o entusiastas de la teoría de conjuntos, esta app brinda una interfaz intuitiva
 para explorar operaciones como unión, intersección, diferencia y más.
+
+---
+
+![Vista previa de la app](./assets/screenshots/preview.png)
+
+---
+
+## 📚 Tabla de contenido
+
+- [¿Qué hace esta app?](#-qué-hace-esta-app)
+- [Tecnologías utilizadas](#-tecnologías-utilizadas)
+- [¿Cómo ejecutar el proyecto?](#-cómo-ejecutar-el-proyecto)
+- [¿Cómo contribuir?](#-cómo-contribuir)
+- [Contáctame](#-contáctame)
 
 ---
 
@@ -82,8 +99,8 @@ python main.py
 Una vez que ambos servidores estén en funcionamiento, abre tu
 navegador y dirígete a:
 
-<http://localhost:5173> (Frontend)
-<http://localhost:8000> (Backend)
+- <http://localhost:5173> (Frontend)
+- <http://localhost:8000> (Backend)
 
 ---
 
@@ -105,5 +122,3 @@ Si tienes preguntas, sugerencias o simplemente quieres charlar sobre teoría de 
 
 - Email: <jacoboblandon94@gmail.com>
 - GitHub: [blandoncj](https://githbu.com/blandoncj)
-
----
