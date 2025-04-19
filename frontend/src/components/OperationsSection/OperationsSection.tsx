@@ -1,3 +1,6 @@
+import { CustomSelect } from "../CustomSelect";
+import { SubmitButton } from "../SubmitButton";
+
 interface Props {
   sets: { name: string }[];
   onExecuteOperation: (setA: string, setB: string, operation: string) => void;
@@ -11,6 +14,15 @@ export const OperationsSection = ({
 }:
   Props
 ) => {
+  const setOptions = sets.map((set) => ({ value: set.name, label: set.name }));
+  const operationOptions = [
+    { value: "union", label: "Union (A ∪ B)" },
+    { value: "intersection", label: "Intersection (A ∩ B)" },
+    { value: "difference", label: "Difference (A - B)" },
+    { value: "symmetricDifference", label: "Symmetric Difference (A Δ B)" },
+  ];
+
+
   return (
     <div className="mt-5 p-6 bg-gray-800 rounded-lg shadow-md">
       <h2 className="text-2xl font-bold text-white mb-4">Set Operations</h2>
@@ -26,55 +38,28 @@ export const OperationsSection = ({
         }}
         className="flex flex-col space-y-4"
       >
-        <select
+        <CustomSelect
           name="setA"
-          className="px-4 py-2 rounded-lg bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-300"
+          placeholder="Select Set A"
+          options={setOptions}
           required
-        >
-          <option value="" disabled>
-            Select Set A
-          </option>
-          {sets.map((set, index) => (
-            <option key={index} value={set.name}>
-              {set.name}
-            </option>
-          ))}
-        </select>
+        />
 
-        <select
+        <CustomSelect
           name="setB"
-          className="px-4 py-2 rounded-lg bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-300"
+          placeholder="Select Set B"
+          options={setOptions}
           required
-        >
-          <option value="" disabled>
-            Select Set B
-          </option>
-          {sets.map((set, index) => (
-            <option key={index} value={set.name}>
-              {set.name}
-            </option>
-          ))}
-        </select>
+        />
 
-        <select
+        <CustomSelect
           name="operation"
-          className="px-4 py-2 rounded-lg bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-300"
+          placeholder="Select Operation"
+          options={operationOptions}
           required
-        >
-          <option value="union">Union (A ∪ B)</option>
-          <option value="intersection">Intersection (A ∩ B)</option>
-          <option value="difference">Difference (A - B)</option>
-          <option value="symmetricDifference">
-            Symmetric Difference (A Δ B)
-          </option>
-        </select>
+        />
 
-        <button
-          type="submit"
-          className="px-4 py-2 bg-cyan-500 text-white rounded-lg shadow-md hover:bg-cyan-400 cursor-pointer transition duration-200 ease-in-out"
-        >
-          Execute Operation
-        </button>
+        <SubmitButton text="Execute Operation" />
       </form>
 
       <div className="mt-6 p-4 bg-gray-700 rounded-lg">

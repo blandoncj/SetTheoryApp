@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { CustomInput } from "../CustomInput";
+import { SubmitButton } from "../SubmitButton";
 
 interface Props {
   onAddSet: (name: string, elements: string[]) => void;
@@ -18,26 +20,13 @@ export const SetForm = ({ onAddSet }: Props) => {
 
   return (
     <form onSubmit={handleSubmit} className="flex flex-col space-y-4 mb-6">
-      <input
-        type="text"
-        placeholder="Set Name"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-        className="px-4 py-2 rounded-lg bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-300"
+      <CustomInput
+        placeholder="Set Name" value={name} onChange={(e) => setName(e.target.value)} required
       />
-      <input
-        type="text"
-        placeholder="Elements (comma-separated)"
-        value={elements}
-        onChange={(e) => setElements(e.target.value)}
-        className="px-4 py-2 rounded-lg bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-300"
+      <CustomInput
+        placeholder="Elements (comma-separated)" value={elements} onChange={(e) => setElements(e.target.value)} required
       />
-      <button
-        type="submit"
-        className="px-4 py-2 bg-cyan-500 text-white rounded-lg shadow-md hover:bg-cyan-400 cursor-pointer transition duration-200 ease-in-out"
-      >
-        Add Set
-      </button>
+      <SubmitButton text="Add Set" />
     </form>
   );
 };

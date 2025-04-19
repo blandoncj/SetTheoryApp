@@ -1,8 +1,8 @@
 import { useState } from "react";
+import { getSets } from "../../services";
+import { OperationsSection } from "../OperationsSection";
 import { SetForm } from "./SetForm";
 import { SetList } from "./SetList";
-import { OperationsSection } from "../OperationsSection";
-import { getSets } from "../../services";
 
 export const SetManager = () => {
   const [sets, setSets] = useState<{ name: string; elements: string[] }[]>([]);
